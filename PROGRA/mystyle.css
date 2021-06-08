@@ -1,0 +1,234 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+
+}
+	#mainwrapper{
+		width:100vw;
+		height:100vh;
+		min-height:50px;
+		position:relative;
+
+    }
+    #secondarywrapper{
+
+        margin:auto;
+        padding-top: 20vh;
+        margin-bottom: 30vh;
+        width:900px;
+        height:0px;
+        min-height:500px;
+        position:relative;
+    }
+
+
+
+    footer{
+    	width:100%;
+    	height:50px;
+    	background-color:#fdd8e2;
+    	position:absolute;
+        bottom:0px;
+    }
+
+    header{
+        z-index: 1;
+    	width:100%;
+    	height:60px;
+        padding:3rem;
+    	/*background-color:#fffaaa;*/
+    	position:absolute;
+    	top:0px;
+        display:grid;
+        grid-template-columns:repeat(6,1fr);
+        column-gap:5px;
+        align-items:center;
+    }
+    a{
+        text-decoration: none;
+        color:black;
+    }
+      a:hover{
+        text-decoration: none;
+        color:lightpink;
+    }
+
+    #logo{
+        grid-column:1/2;
+
+    }
+
+    #menu{
+        grid-column:3/7;
+        display:flex;
+        font-family: 'Righteous', cursive;
+        font-size:30px;
+        justify-content:space-between;
+
+
+
+    }
+
+    #menu div{
+        text-transform:uppercase;
+        cursor:pointer;
+
+    }
+
+    #menu div:hover{
+        color:red;
+
+    }
+
+    #derecha{
+        
+        right:30px;
+    }
+
+    .botonie{
+        position:absolute;
+        top:45%;
+        width:70px;
+
+    }
+
+    #izquierda{
+        
+            left:30px;
+    }
+
+    .imagewrapper{
+        width:380px;
+        height:380px;
+        overflow:hidden;
+        border-radius:50px;
+    }
+
+    .imagewrapper img{
+
+        /*height:100%;*/
+        
+    }
+
+    #aboutcontent{
+        width: auto;
+        margin-top: 40vh;
+        margin-left: 28%;
+        position: absolute;
+        font-family: 'Righteous', cursive;
+        font-size:30px;
+    }
+        #teamcontent{
+        width: auto;
+        margin-top: 40vh;
+        margin-left: 32%;
+        position: absolute;
+        font-family: 'Righteous', cursive;
+        font-size:25px;
+    }
+        #contact{
+        width: auto;
+        margin-top: 40vh;
+        margin-left: 40%;
+        position: absolute;
+        font-family: 'Righteous', cursive;
+        font-size:30px;
+    }
+
+    /**/
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: transparent;
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 200px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30px;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 60%;
+  }
+}
+
+@media screen and ( max-width: 200px ) {
+  .carousel-cell {
+    width: 100%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: lightpink;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background:  lightpink;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button.arrow {
+  fill: lightpink;
+}
+.flickity-prev-next-button.no-svg {
+  color: lightpink;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+	
